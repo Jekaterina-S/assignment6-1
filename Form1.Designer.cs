@@ -48,6 +48,7 @@ namespace assignment6_1
             this.button1.TabIndex = 0;
             this.button1.Text = "Rock";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -66,20 +67,19 @@ namespace assignment6_1
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label2.Location = new System.Drawing.Point(264, 101);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 20);
+            this.label2.Size = new System.Drawing.Size(0, 20);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Rock";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Visible = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(254, 189);
+            this.label3.Location = new System.Drawing.Point(220, 189);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 20);
+            this.label3.Size = new System.Drawing.Size(0, 20);
             this.label3.TabIndex = 3;
-            this.label3.Text = "You lose";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
@@ -99,9 +99,8 @@ namespace assignment6_1
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label5.Location = new System.Drawing.Point(264, 305);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 20);
+            this.label5.Size = new System.Drawing.Size(0, 20);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Paper";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button2
@@ -112,6 +111,7 @@ namespace assignment6_1
             this.button2.TabIndex = 6;
             this.button2.Text = "Paper";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -121,6 +121,7 @@ namespace assignment6_1
             this.button3.TabIndex = 7;
             this.button3.Text = "Scissors";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -130,6 +131,8 @@ namespace assignment6_1
             this.button4.TabIndex = 8;
             this.button4.Text = "Try Again?";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Visible = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form1
             // 
